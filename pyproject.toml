@@ -1,0 +1,190 @@
+[project]
+name = "dataset-explorer"
+version = "0.1.0"
+description = "Interactive data explorer app"
+authors = [{name = "AI4SD team", email = "ai4sd@zurich.ibm.com"}]
+readme = "README.md"
+#packages = [{include = "dataset_explorer", from="src"}]
+#include = ["dataset_explorer/py.typed"]
+requires-python = ">=3.10" 
+dependencies = [
+    "langchain_community",
+    "langchain",
+    "loguru",
+    "langchain-ibm>=0.3.10",
+    "transformers>=4.51.3",
+    "langchain-huggingface>=0.1.2",
+    "accelerate>=1.6.0",
+    "ruff>=0.11.5",
+    "streamlit>=1.44.1",
+    "plotly>=6.0.1",
+    "st-annotated-text",
+    "dataset_explorer",
+    "pytest>=8.3.5",
+    "faiss-cpu",
+    "pip>=25.0.1",
+]
+
+[project.scripts]
+dataset-explorer-app = "dataset_explorer.app.launcher:main"
+dataset-explorer-vs = "dataset_explorer.cli:run_vector_store_creation"
+dataset-explorer-merge-vs = "dataset_explorer.cli:merge_vector_stores"
+dataset-explorer-hf = "dataset_explorer.cli:load_and_run_data_analysis_on_hf_dataset"
+dataset-explorer-folder = "dataset_explorer.cli:load_and_run_data_analysis_on_folder"
+
+[tool.mypy]
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "click.*",
+    "datasets.*",
+    "torch.*",
+    "transformers.*",
+    "yaml.*",
+    "pandas.*",
+    "scipy.*",
+]
+ignore_missing_imports = true
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/dataset_explorer",
+    "dataset_explorer/py.typed",
+]
+[tool.hatch.build.targets.wheel]
+include = [
+   "src/dataset_explorer",
+    "dataset_explorer/py.typed",
+]
+[tool.hatch.build.targets.wheel.sources]
+"src/dataset_explorer" = "dataset_explorer"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.ruff]
+# Include also Jupyter notebooks.
+extend-include = ["*.ipynb"]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 100
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+preview = true
+select = [
+    "E4", 
+    "E7", 
+    "E9", 
+    "F", 
+    "W291", 
+    "W292", 
+    "W505", 
+    "E721",
+    "I",
+    "N801",
+    "N802",
+    "N803",
+    "N804",
+    "N805",
+    "N806",
+    "N816",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D300",
+    "UP010",
+    "UP011",
+    "UP019",
+    "UP032",
+    "ARG",
+    "PTH",
+    "LOG001",
+    "LOG002",
+]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+preview = true
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = false
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+
+[tool.uv.sources]
+dataset-explorer = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "dataset-explorer",
+]

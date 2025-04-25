@@ -1,0 +1,172 @@
+[
+    {
+        "created": "2025-01-15T09:20:11",
+        "id": 100001,
+        "doi": "https://doi.org/10.1234/zenodo.100001",
+        "title": "Simulated Protein Folding Pathways via Quantum Tunneling Models",
+        "metadata": {
+            "description": "We simulate protein folding mechanisms under extreme conditions using quantum-inspired models.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Alexi Rames", "Priya Kwon"]
+        },
+        "stats": {
+            "downloads": 45,
+            "unique_downloads": 12,
+            "views": 1820
+        },
+        "files": [{"id": 2001, "size": 123456, "links": "https://zenodo.org/records/100001"}]
+    },
+    {
+        "created": "2025-02-02T14:55:44",
+        "id": 100002,
+        "doi": "https://doi.org/10.1234/zenodo.100002",
+        "title": "High-Energy Cosmic Ray Simulations in Dwarf Galaxies",
+        "metadata": {
+            "description": "A dataset of simulated cosmic ray interactions within the magnetic fields of dwarf galaxies.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Lina Ochoa", "Tomás Bennett"]
+        },
+        "stats": {
+            "downloads": 67,
+            "unique_downloads": 19,
+            "views": 2999
+        },
+        "files": [{"id": 2002, "size": 987654, "links": "https://zenodo.org/records/100002"}]
+    },
+    {
+        "created": "2025-03-12T08:13:30",
+        "id": 100003,
+        "doi": "https://doi.org/10.1234/zenodo.100003",
+        "title": "Synthetic Reaction Pathways in Organic Catalysis",
+        "metadata": {
+            "description": "We provide a comprehensive dataset of hypothetical reaction pathways used for training catalytic design models.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Miko Tanaka", "Sophie Landon"]
+        },
+        "stats": {
+            "downloads": 32,
+            "unique_downloads": 8,
+            "views": 1450
+        },
+        "files": [{"id": 2003, "size": 443322, "links": "https://zenodo.org/records/100003"}]
+    },
+    {
+        "created": "2025-04-01T16:42:05",
+        "id": 100004,
+        "doi": "https://doi.org/10.1234/zenodo.100004",
+        "title": "Evaluating Transformer Architectures for Symbolic Physics Reasoning",
+        "metadata": {
+            "description": "This dataset includes synthetic symbolic expressions and derivations for testing physics reasoning models.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Ravi Mendez", "Zoë Chan"]
+        },
+        "stats": {
+            "downloads": 89,
+            "unique_downloads": 27,
+            "views": 3771
+        },
+        "files": [{"id": 2004, "size": 221100, "links": "https://zenodo.org/records/100004"}]
+    },
+    {
+        "created": "2025-04-22T11:11:11",
+        "id": 100005,
+        "doi": "https://doi.org/10.1234/zenodo.100005",
+        "title": "Benchmarking Multi-modal Learning Models on Synthetic Sensor Fusion Data",
+        "metadata": {
+            "description": "A synthetic dataset designed to evaluate multi-modal learning models with audio, visual, and sensor streams.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Emil Kostov", "Maya Adler"]
+        },
+        "stats": {
+            "downloads": 134,
+            "unique_downloads": 55,
+            "views": 6120
+        },
+        "files": [{"id": 2005, "size": 765432, "links": "https://zenodo.org/records/100005"}]
+    },
+    {
+        "created": "2025-04-12T10:45:00",
+        "id": 100006,
+        "doi": "https://doi.org/10.1234/zenodo.100006",
+        "title": "Thermal Conductivity Models in Anisotropic Crystals",
+        "metadata": {
+            "description": "This dataset contains simulated results from lattice-based thermal transport models in various anisotropic crystals.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Camille Verdi", "Jonas H. Beck"]
+        },
+        "stats": {
+            "downloads": 58,
+            "unique_downloads": 22,
+            "views": 2103
+        },
+        "files": [{"id": 2006, "size": 302112, "links": "https://zenodo.org/records/100006"}]
+    },
+    {
+        "created": "2025-03-30T18:20:38",
+        "id": 100007,
+        "doi": "https://doi.org/10.1234/zenodo.100007",
+        "title": "Synthetic Data for Ecosystem Biodiversity Indexing",
+        "metadata": {
+            "description": "Artificially generated biodiversity metrics used for training ecological monitoring models across biomes.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Nicolette Zhao", "Hamed Faraji"]
+        },
+        "stats": {
+            "downloads": 76,
+            "unique_downloads": 31,
+            "views": 3420
+        },
+        "files": [{"id": 2007, "size": 418992, "links": "https://zenodo.org/records/100007"}]
+    },
+    {
+        "created": "2025-01-19T13:33:17",
+        "id": 100008,
+        "doi": "https://doi.org/10.1234/zenodo.100008",
+        "title": "Catalyst Efficiency Metrics in Hypothetical Reaction Networks",
+        "metadata": {
+            "description": "This dataset includes simulated reaction yields, rates, and intermediate stabilities for synthetic catalyst networks.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Felix Marek", "Tanya Duval"]
+        },
+        "stats": {
+            "downloads": 49,
+            "unique_downloads": 15,
+            "views": 1689
+        },
+        "files": [{"id": 2008, "size": 378211, "links": "https://zenodo.org/records/100008"}]
+    },
+    {
+        "created": "2025-02-25T07:59:09",
+        "id": 100009,
+        "doi": "https://doi.org/10.1234/zenodo.100009",
+        "title": "Simulated Stellar Collapse Events for Neutrino Emission Modeling",
+        "metadata": {
+            "description": "A synthetic dataset simulating core-collapse supernovae and their neutrino flux patterns in various stellar masses.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Anya Kershaw", "Dmitri Lang"]
+        },
+        "stats": {
+            "downloads": 88,
+            "unique_downloads": 29,
+            "views": 3982
+        },
+        "files": [{"id": 2009, "size": 512034, "links": "https://zenodo.org/records/100009"}]
+    },
+    {
+        "created": "2025-04-20T12:08:45",
+        "id": 100010,
+        "doi": "https://doi.org/10.1234/zenodo.100010",
+        "title": "Comparative Analysis of Synthetic Language Models on Structured Prompt Tasks",
+        "metadata": {
+            "description": "Includes performance data of language models evaluated on a series of structured, logic-based prompt sequences.",
+            "resource_type": {"title": "Dataset", "type": "dataset"},
+            "creators": ["Salim D. Onur", "Greta Lumens"]
+        },
+        "stats": {
+            "downloads": 192,
+            "unique_downloads": 73,
+            "views": 7450
+        },
+        "files": [{"id": 2010, "size": 894563, "links": "https://zenodo.org/records/100010"}]
+    }
+]
