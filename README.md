@@ -12,7 +12,7 @@ Ideal for research repositories like Zenodo, Hugging Face datasets and local arc
 
 ### Features
 - 🗂️ Multi-format document parsing — Load a wide range of file types including dataset related publications (parsed with [Docling](https://github.com/docling-project/docling/tree/main)), CSV, XLSX, TXT, and more. 
-- 📝  Easily extend support with [custom Python loaders](addreadme) for your own data formats
+- 📝  Easily extend support with <a href="#extras">custom data loaders</a> for your own data formats
 - 📁 Folder-level parsing and indexing — Automatically parse entire folders, generate a hierarchical summary and build a vector store for semantic search
 - 🌐 Interactive navigation via Streamlit app — Browse, search, and explore your documents and vector stores visually and interactively
 - 🔍 Similarity search across repositories — Compare and connect your custom datasets with public repositories like Zenodo or Hugging Face using semantic similarity search
@@ -92,7 +92,7 @@ Check an example structure in the details below.
     dataset-explorer-folder --dataset_name data/berka --output_directory ./berka-info
     ```
 ### Extras: Use HF metadata and custom data loaders
-
+<a id="extras"></a>
 Below additional details on how you can further customize the dataset explorer. 
 
 <details>
